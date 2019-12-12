@@ -7,5 +7,8 @@ from . import views
 app_name = "upload_media"
 urlpatterns = [
     path('', views.index, name="index"),
-    path('post-article', views.post_article, name="post_article")
+    path('list-article', views.list_article, name="list_article"),
+    path('post-article', views.post_article, name="post_article"),
+    path('list-videos', views.list_videos, name="list_videos"),
+    path('post-videos', views.post_videos, name="post_videos"),
 ]

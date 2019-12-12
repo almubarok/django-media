@@ -1,0 +1,11 @@
+<a href="{% url 'upload_media:index' %}">
+    <button>Home</button>
+</a>
+<br>
+<br>
+<br>
+
+{% for article in articles %}
+    <img width="600" src="{{article.image.url}}" alt="{{article.title}}">
+{% endfor %}
+

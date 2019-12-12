@@ -10,3 +10,11 @@ class Article(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Video(models.Model):
+    title = models.CharField(max_length=255, default="")
+    video = models.FileField(upload_to="videos/")
+
+    def __str__(self):
+        return self.title

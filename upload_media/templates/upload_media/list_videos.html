@@ -1,0 +1,20 @@
+<a href="{% url 'upload_media:index' %}">
+    <button>Home</button>
+</a>
+<br>
+<br>
+<br>
+
+{% for video in videos %}
+{% comment %} 
+    https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_video 
+    https://www.sample-videos.com/
+{% endcomment %}
+    <video width="600" controls>
+        <source src="{{video.video.url}}" type="video/mp4">
+        <source src="{{video.video.url}}" type="rtmp/webm">
+        <source src="{{video.video.url}}" type="video/ogg">
+        Your browser does not support HTML5 video.
+    </video>
+{% endfor %}
+
