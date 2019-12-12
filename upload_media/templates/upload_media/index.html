@@ -1,0 +1,8 @@
+<a href="{% url 'upload_media:post_article' %}">
+    <button>Post Article</button>
+</a>
+<br>
+
+{% for article in articles %}
+    <img src="{{article.image.url}}" alt="{{article.title}}">
+{% endfor %}
