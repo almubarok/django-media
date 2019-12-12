@@ -1,0 +1,19 @@
+<a href="{% url 'upload_media:index' %}">
+    <button>Home</button>
+</a>
+<br>
+<br>
+<br>
+
+{% for music in musics %}
+{% comment %} 
+    https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_audio_all
+    https://file-examples.com/index.php/sample-audio-files/sample-mp3-download/
+{% endcomment %}
+    <audio controls>
+    <source src="{{ music.music.url }}" type="audio/ogg">
+    <source src="{{ music.music.url }}" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+{% endfor %}
+
