@@ -11,4 +11,6 @@ urlpatterns = [
     path('post-article', views.post_article, name="post_article"),
     path('list-videos', views.list_videos, name="list_videos"),
     path('post-videos', views.post_videos, name="post_videos"),
+    path('list-musics', views.list_musics, name="list_musics"),
+    path('post-musics', views.post_musics, name="post_musics"),
 ]

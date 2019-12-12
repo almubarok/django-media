@@ -18,3 +18,11 @@ class Video(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Music(models.Model):
+    title = models.CharField(max_length=255, default="")
+    music = models.FileField(upload_to="musics/")
+
+    def __str__(self):
+        return self.title

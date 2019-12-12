@@ -1,5 +1,5 @@
 from django import forms
-from .models import Article, Video
+from .models import Article, Video, Music
 
 
 class ArticleForm(forms.ModelForm):
@@ -15,4 +15,12 @@ class VideosForm(forms.ModelForm):
 
     class Meta:
         model = Video
+        fields = '__all__'
+
+
+class MusicsForm(forms.ModelForm):
+    music = forms.FileField()
+
+    class Meta:
+        model = Music
         fields = '__all__'
