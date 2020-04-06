@@ -1,5 +1,6 @@
 ### How to use
 
-- `pip install Pillow`
-- `python manage.py migrate`
-- `python manage.py runserver`
+- `pip3 install Pillow`
+- `python3 manage.py migrate`
+- `python3 manage.py createsuperuser`
+- `python3 manage.py runserver`
